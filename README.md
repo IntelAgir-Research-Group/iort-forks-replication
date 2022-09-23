@@ -1,7 +1,6 @@
 # Replication Package - MSR IoRT Software
 ## Team
 - Michel Albonico (head)
-- Adair José Rohling
-- Juliano Soares
+- Alexandre Corneau
 - Paulo Junior Varela
 
