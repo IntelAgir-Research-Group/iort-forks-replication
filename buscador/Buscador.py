@@ -3,18 +3,24 @@ import json
 import time
 import sqlite3
 
-with open('auth.json') as f:
-    headers = json.load(f)
+# Ler o arquivo de configuração com o token de autenticação
+with open('config.json') as config_file:
+    config = json.load(config_file)
+    token = config['token']
+
 # Ler o arquivo de texto com os nomes de usuário e repositórios
 with open('usuarios.txt') as f:
     for line in f:
         # Separar o nome de usuário e nome do repositório
         username, repository = line.strip().split()
-        
+
         # Definir o URL da API do Github
         url = f'https://api.github.com/repos/{username}/{repository}'
 
-        # Realizar a requisição GET para obter informações do usuário e repositório
+        # Adicionar o token de autenticação no cabeçalho da requisição
+        headers = {'Authorization': f'Token {token}'}
+
+        # Fazer a requisição
         response = requests.get(url, headers=headers)
 
         # Verificar se a requisição foi bem sucedida
@@ -31,11 +37,9 @@ with open('usuarios.txt') as f:
             repo_is_fork = repo_info['fork']
             repo_created_at = repo_info['created_at']
             repo_updated_at = repo_info['updated_at']
-            time.sleep(40)
-
-
+            
             # Criar uma conexão com o banco de dados SQL
-            conn = sqlite3.connect('Git.db')
+            conn = sqlite3.connect('git.db')
             c = conn.cursor()
 
             # Criar uma tabela para armazenar as informações do repositório
@@ -52,6 +56,5 @@ with open('usuarios.txt') as f:
         else:
             # Exibir uma mensagem de erro se a requisição falhar
             print(f'Não foi possível buscar informações do usuário/repositório {username}/{repository}')
-
-    # Aguardar 1 minuto antes de executar novamente
-            time.sleep(40)
+ # Pausar por 40 segundos antes de fazer a próxima requisição
+        time.sleep(2)
