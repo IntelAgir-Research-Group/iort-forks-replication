@@ -38,7 +38,7 @@ def get_repo_data(url, developer):
         
     else:
         # Exibir uma mensagem de erro se a requisição falhar
-        print(f'Não foi possível buscar informações do usuário/repositório {username}/{repository}')
+        print(f'Não foi possível buscar informações do usuário/repositório {developer}')
     # Pausar por 40 segundos antes de fazer a próxima requisição
     time.sleep(2)
 
@@ -50,7 +50,7 @@ def get_repositories(developer, page):
         repositories = response.json()
         for repo in repositories:
             repository = repo["name"]
-            print("Getting data: ", repository)
+            # print("Getting data: ", repository)
             url = f'https://api.github.com/repos/{developer}/{repository}'
             get_repo_data(url, developer)
     else:
@@ -71,6 +71,7 @@ with open('dev_qtde_repos.csv', newline='') as csvfile:
         
     for row in reader:
         developer = row['username']
+        print("--- Developer: ", developer)
         qtde_repos = row['public_repos']
         pages = math.ceil(int(qtde_repos) / 30)
         print(developer," - pages: ", pages)
