@@ -12,7 +12,7 @@ Lista de repositórios originais.
 Este estudo foi realizado por membros do Grupo de Pesquisa Intel Agir , com o apoio da Fundação Araucária. Esta é a nossa equipe de pesquisadores:
 
 - [Michel Albonico](https://michelalbonico.github.io) (Professor da Universidade Tecnológica Federal do Paraná)
-- [Alexandre Corneau] (https://github.com/ALEXANDRECORNEAU)(Estagiário da Universidade Tecnológica Federal do Paraná)
+- [Alexandre Corneau](https://github.com/ALEXANDRECORNEAU) (Estagiário da Universidade Tecnológica Federal do Paraná)
 
 ## Construindo o conjunto de dados
 Grande parte do procedimento foi automatizada utilizando scripts de Python e a API REST do GitHub. Os repositórios do GitHub foram acessados através da API REST, como você verá mais tarde. Além disso, disponibilizamos os códigos de Python que identificam os repositórios que foram selecionados do GitHub. Apesar de alguns imprevistos durante a busca por repositórios, mais de 42 mil repositórios foram analisados.
