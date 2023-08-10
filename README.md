@@ -8,14 +8,13 @@ Nossa abordagem consiste em 3 etapas principais, conforme mostrado na figura aba
 O trabalho tem como base uma lista de repositórios de software disponíveis [nessa](https://github.com/IntelAgir-Research-Group/sbcars2021-replication-package-mining-iot) outra publicação anterior.
 
 
-## Banco de Dados (Dados Extraídos)
+## Pesquisadores Envolvidos
 Este estudo foi realizado por membros do Grupo de Pesquisa Intel Agir, com o apoio da Fundação Araucária, com bolsa PIBIC, sob a orientação do professor Michel Albonico.
 
 - [Michel Albonico](https://michelalbonico.github.io) (Professor da Universidade Tecnológica Federal do Paraná)
 - [Alexandre Corneau](https://github.com/ALEXANDRECORNEAU) (Bolsista PIBIC da Universidade Tecnológica Federal do Paraná)
 
-## Construindo o conjunto de dados
-O procedimento de mineração dos repositórios de software foi automatizado utilizando scripts de Python e a API REST do GitHub. Neste repositório, disponibilizamos os códigos de Python utilizados. 
+## Organização do Repositório
 
 Nossos scripts são organizados da seguinte forma:
 
