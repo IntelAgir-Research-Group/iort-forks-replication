@@ -25,11 +25,11 @@ Nossos scripts são organizados da seguinte forma:
 
 ````
 ./scripts/
-    |--- crawling/     		    Pasta aonde fica o código para realizar busca e implementação do banco.
-         |--- Buscador.py       Código que realiza a busca dos usuários.
-         |--- requirements.txt  Python dependência. Tipo "pip install -r requirements.txt".
-         |--- keywords          Lista de usuários para gerar a busca.
-         |--- config.json	    Script para informar as credencias o token do GitHub.
+    |--- crawling/                  Pasta aonde fica o código para realizar busca e implementação do banco.
+        |--- Buscador.py            Código que realiza a busca dos usuários.
+        |--- requirements.txt       Python dependência. Tipo "pip install -r requirements.txt".
+        |--- keywords               Lista de usuários para gerar a busca.
+        |--- config.jsos            Script para informar as credencias o token do GitHub.
 ````
 
 1. Para iniciar o processo de mineração, informamos os usuários e extraímos todos os forks que eles realizaram.
