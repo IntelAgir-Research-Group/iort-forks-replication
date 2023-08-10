@@ -9,10 +9,10 @@ $ pip install -r requirements.txt
 ```
 ## Extração dos Forks
 
-O primeiro passo é extrair todos os forks dos repositórios de software listados no [artigo anterior](https://github.com/IntelAgir-Research-Group/sbcars2021-replication-package-mining-iot).
+O primeiro passo é extrair todos os forks dos repositórios de software listados no [artigo anterior](https://github.com/IntelAgir-Research-Group/sbcars2021-replication-package-mining-iot). Esses repositorios estão listados no arquivo `lista_repositorios.txt` e o script Python salva o resultado no arquivo `forks.csv`.
 
 ```python
-$ bla bla
+$ python3 busca-forks.py
 ```
 
 ## Busca Pelos Repositórios dos Usuários
