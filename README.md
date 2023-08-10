@@ -26,7 +26,7 @@ Nossos scripts são organizados da seguinte forma:
 ````
 ./scripts/
     |--- crawling/     		    Pasta aonde fica o código para realizar busca e implementação do banco.
-         |--- Buscador.py   código que realiza a busca dos usuários.
+         |--- Buscador.py       Código que realiza a busca dos usuários.
          |--- requirements.txt  Python dependência. Tipo "pip install -r requirements.txt".
          |--- keywords          Lista de usuários para gerar a busca.
          |--- config.json	    Script para informar as credencias o token do GitHub.
