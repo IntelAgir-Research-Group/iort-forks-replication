@@ -19,7 +19,7 @@ $ python3 busca-forks.py
 
 Após todos os forks serem extraídos, buscamos informações relativas aos repositórios dos usuários donos dos forks. 
 
-Todos os usuários são listados e ordenados pela quantidade de repositórios no arquivo `dev_qtde_repos-all-ordered.csv`.
+Todos os usuários são listados e ordenados pela quantidade de repositórios no arquivo `dev_qtde_repos-all-ordered.csv`. Esse arquivo é gerado a partir do arquivo `forks.csv`, agrupando os usuários e contando a quantidade de repositórios de cada um.
 
 **Isso pode demorar vários dias para executar.** Recomendamos dividir o arquivo dos usuários em vários e executar em partes.
 
