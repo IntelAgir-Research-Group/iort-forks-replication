@@ -63,10 +63,10 @@ with open('config.json') as config_file:
     headers = {'Authorization': f'Token {token}'}
 
 # Criar uma conexão com o banco de dados SQL
-conn = sqlite3.connect('git.db')
+conn = sqlite3.connect('dev_repos.db')
 c = conn.cursor()
 
-with open('dev_qtde_repos.csv', newline='') as csvfile:
+with open('dev_qtde_repos-all-ordered.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
         
     for row in reader:
