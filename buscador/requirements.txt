@@ -1,1 +1,7 @@
 pysqlite3
+requests
+json
+time
+sqlite3
+csv
+math
