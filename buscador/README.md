@@ -26,3 +26,7 @@ Todos os usuários são listados e ordenados pela quantidade de repositórios no
 ```python
 $ python3 busca-dev-repos.py
 ```
+
+## Código para Codelabs
+
+A pasta `codelabs` contém um notebook para ser usado no Codelabs.
