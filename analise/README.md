@@ -2,9 +2,7 @@
 
 Aqui estão todos os arquivos para análise dos resultados, bem como mineração adicional necessária para a escrita do relatório final do PIBIC.
 
-## Organização do repositório
-
-
+Os notebooks para os gráficos são auto-explicativos. Abaixo os scripts Python para mineração extra.
 
 ## Buscar pelo ano que os forks foram criados e atualizados.
 
